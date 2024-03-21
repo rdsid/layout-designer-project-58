@@ -31,26 +31,17 @@
   --blue: #1085c5;
 }
 
-.neucha-regular {
-  font-family: 'Neucha', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.open-sans-regular {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
   color: var(--dark);
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 h1,
@@ -58,6 +49,7 @@ h2,
 h3 {
   line-height: 1.2;
   font-family: 'Neucha', sans-serif;
+  font-weight: normal;
   color: var(--dark);
   padding: 0;
   margin: 0;
@@ -75,27 +67,33 @@ h3 {
   font-size: 34px;
 }
 
+header {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  max-width: 1110px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 100px 0;
+  width: 1110px;
   margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
 }
 
 .orange {
   color: var(--main-color);
 }
 
+.bg-image {
+  position: relative;
+}
+
 .bg-image::before {
   content: "";
   position: absolute;
-
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   background-image: url("../img/bg-main.png");
   background-repeat: no-repeat;
@@ -130,7 +128,7 @@ h3 {
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 25px;
   background: var(--main-color);
   border: none;
   cursor: pointer;
