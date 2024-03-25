@@ -73,14 +73,18 @@ header {
 }
 
 .container {
+  position: relative;
   width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
-  position: relative;
 }
 
 .orange {
   color: var(--main-color);
+}
+
+.white {
+  color: var(--white);
 }
 
 .bg-image {
@@ -116,9 +120,12 @@ header {
 }
 
 .columns {
-  margin-top: 180px;
   display: flex;
   font-size: 16px;
+}
+
+.marg180 {
+  margin-top: 180px;
 }
 
 .columns>div {
@@ -144,4 +151,148 @@ header {
 
 .btn:hover {
   background: #EA7600;
+}
+
+.center {
+  text-align: center;
+}
+
+.pad30 {
+  padding-top: 30px;
+}
+
+.video {
+  margin: 0 auto;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dark-bg {
+  background-color: var(--main-dark-color);
+}
+
+.container-video {
+  position: relative;
+  margin-bottom: 430px;
+}
+
+.doublepad {
+  padding-top: 180px;
+}
+
+.frames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.p52 {
+  font-size: 52px
+}
+
+.frame {
+  margin-top: 20px;
+  height: 323px;
+  width: 350px;
+}
+
+.bigheight {
+  height: 348px;
+}
+
+.card {
+  background: var(--white);
+}
+
+.frame>a>div {
+  padding: 24px;
+}
+
+.frame>a>div>h1 {
+  font-size: 64px;
+  margin: 0;
+  padding: 0 0 40px 0;
+  line-height: 1;
+}
+
+.card:hover {
+  color: var(--white);
+  background: var(--main-color);
+}
+
+.card:hover>a>div>p {
+  color: var(--white);
+}
+
+.card:hover>a>div>h1 {
+  color: var(--white);
+}
+
+.frame:hover>a>div>h3 {
+  color: var(--white);
+}
+
+.frame a {
+  text-decoration: none;
+  display: inline;
+}
+
+.content-img {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  width: 578px;
+  margin-bottom: 100px;
+  height: 434px;
+}
+
+.w {
+  width: 502px;
+}
+
+.filled-header {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  background: var(--brown);
+  padding-left: 10px;
+  height: 26px;
+  margin-bottom: 20px;
+}
+
+.filled-header>h3 {
+  color: var(--white);
+  line-height: 2em;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.neucha-regular {
+  font-family: 'Neucha', sans-serif;
+}
+
+.block-title {
+  line-height: 28.8px;
+  margin: 0;
+  font-size: 24px;
+  color: var(--half-dark);
+}
+
+.block-header {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.block-description {
+  font-size: 34px;
+  line-height: 40.8px;
+  color: var(--dark);
+}
+
+.columns>div>p {
+  padding: 0;
+  margin: 0;
 }
