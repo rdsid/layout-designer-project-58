@@ -228,11 +228,11 @@ header {
   background: var(--white);
 }
 
-.frame>a>div {
+.frame>div {
   padding: 24px;
 }
 
-.frame>a>div>h1 {
+.frame>div>h1 {
   font-size: 64px;
   margin: 0;
   padding: 0 0 40px 0;
@@ -244,21 +244,20 @@ header {
   background: var(--main-color);
 }
 
-.card:hover>a>div>p {
+.card:hover>div>p {
   color: var(--white);
 }
 
-.card:hover>a>div>h1 {
+.card:hover>div>h1 {
   color: var(--white);
 }
 
-.frame:hover>a>div>h3 {
+.frame:hover>div>h3 {
   color: var(--white);
 }
 
-.frame a {
+.frames-link {
   text-decoration: none;
-  display: inline;
   color: var(--dark);
 }
 
@@ -274,16 +273,16 @@ header {
 }
 
 .filled-header {
-  width: 100%;
+  width: 1110px;
   text-transform: uppercase;
   text-align: left;
   background: var(--brown);
-  padding-left: 10px;
   height: 26px;
   margin-bottom: 20px;
 }
 
 .filled-header>h3 {
+  padding-left: 10px;
   color: var(--white);
   line-height: 2em;
   font-size: 14px;
@@ -344,6 +343,95 @@ header {
   background: var(--white);
 }
 
-.white-bg > h3 {
+.white-bg>h3 {
   color: var(--brown);
+}
+
+.form>div>h3 {
+  color: var(--white);
+}
+
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  color: var(--white);
+  width: calc(100% - 55px * 2);
+  height: 190px;
+  align-items: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.left {
+  width: 393px;
+  flex-basis: 393px;
+}
+
+form {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
+
+input {
+  border: none;
+  width: 385px;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.img-button {
+  position: relative;
+  background: var(--main-color);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  line-height: 0;
+  width: 70px;
+}
+
+.img-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/Vector.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-button:hover {
+  background: #EA7600;
+}
+
+.email {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.license {
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contacts > p > a {
+  color: var(--blue);
+}
+
+.rules {
+  color: var(--white);
 }
